@@ -4,6 +4,9 @@ This repository contains code and associated files for deploying ML models using
 
 ### Project
 
+[Sentiment Analysis Web App](https://github.com/suyashtn/machine-learing-projects/tree/master/Deploy_Sentiment_Analysis_Model): is a deployed RNN performing sentiment analysis on movie reviews complete with publicly accessible API and a simple web page which interacts with the deployed endpoint. This project assumes that you have some familiarity with SageMaker and used the built-in XGBoost model. Find original project files in [Udacity repository](https://github.com/udacity/sagemaker-deployment/tree/master/Project).
+
+
 [Plagiarism Detector](https://github.com/suyashtn/machine-learing-projects/tree/master/Project_Plagiarism_Detection): Build an end-to-end plagiarism classification model. Apply your skills to clean data, extract meaningful features, and deploy a plagiarism classifier in SageMaker. Find original project files in [Udacity repository](https://github.com/udacity/ML_SageMaker_Studies/tree/master/Project_Plagiarism_Detection).
 
 ---
