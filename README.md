@@ -2,13 +2,15 @@
 
 This repository contains code and associated files for deploying ML models using AWS SageMaker. This repository consists of a number of projects that will be used to illustrate parts of the ML workflow and can be used to practice deploying a variety of ML algorithms.
 
-### Project
+### Projects
 
 [Sentiment Analysis Web App](https://github.com/suyashtn/machine-learing-projects/tree/master/Deploy_Sentiment_Analysis_Model): is a deployed RNN performing sentiment analysis on movie reviews complete with publicly accessible API and a simple web page which interacts with the deployed endpoint. This project assumes that you have some familiarity with SageMaker and used the built-in XGBoost model. Find original project files in [Udacity repository](https://github.com/udacity/sagemaker-deployment/tree/master/Project).
 
 
 [Plagiarism Detector](https://github.com/suyashtn/machine-learing-projects/tree/master/Project_Plagiarism_Detection): Build an end-to-end plagiarism classification model. Apply your skills to clean data, extract meaningful features, and deploy a plagiarism classifier in SageMaker. Find original project files in [Udacity repository](https://github.com/udacity/ML_SageMaker_Studies/tree/master/Project_Plagiarism_Detection).
 
+
+[Stock Pirce Predictor](https://github.com/suyashtn/machine-learing-projects/tree/master/Predict_Stock_Prices): Build a stock price prediction model. The share price datasets for publicly listed companies can be obtained from [Quandl](https://www.quandl.com). In this project, the Linear Regression and XGBoost methods are used as benchmark models and the performance of an implementation of the Long Short-Term Memory (LSTM) network model is compared for making future predictions.
 ---
 
 ## Setup Instructions
