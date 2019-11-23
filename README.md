@@ -10,7 +10,7 @@ This repository contains code and associated files for deploying ML models using
 [Plagiarism Detector](https://github.com/suyashtn/machine-learing-projects/tree/master/Project_Plagiarism_Detection): Build an end-to-end plagiarism classification model. Apply your skills to clean data, extract meaningful features, and deploy a plagiarism classifier in SageMaker. Find original project files in [Udacity repository](https://github.com/udacity/ML_SageMaker_Studies/tree/master/Project_Plagiarism_Detection).
 
 
-[Stock Pirce Predictor](https://github.com/suyashtn/machine-learing-projects/tree/master/Predict_Stock_Prices): Build a stock price prediction model. The share price datasets for publicly listed companies can be obtained from [Quandl](https://www.quandl.com). In this project, the Linear Regression and XGBoost methods are used as benchmark models and the performance of an implementation of the Long Short-Term Memory (LSTM) network model is compared for making future predictions.
+[Stock Pirce Predictor](https://github.com/suyashtn/machine-learing-projects/tree/master/Predict_Stock_Prices): Build a stock price prediction model. The share price datasets for publicly listed companies can be obtained from [Yahoo Finance](https://finance.yah00.com). In this project, the Linear Regression and XGBoost methods are used as benchmark models and the performance of an implementation of the Long Short-Term Memory (LSTM) network model is compared for making future predictions.
 
 ---
 
