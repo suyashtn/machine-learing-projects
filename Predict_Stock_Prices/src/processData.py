@@ -64,10 +64,14 @@ def series_to_supervised(dataset, history_size, target_size):
         :return: X: sets of feature
         :return: y: sets of label
     """
-    dataset.columns = ['Item','Open','Close','Volume']
-#     dataset = dataset.drop(['Item'], axis=1)
-    dataset = dataset['Close']
-    dataset = dataset.values
+    dataset.columns = ['Item','Open','Volume','Close']
+    
+    # feature dataset
+    dataset_f = dataset.drop(['Item'], axis=1)
+    dataset_f = dataset_f.values
+    # label dataset
+    dataset_l = dataset['Close']
+    dataset_l = dataset_l.values
     
     start_index = history_size
     end_index = len(dataset) - target_size
@@ -77,8 +81,8 @@ def series_to_supervised(dataset, history_size, target_size):
     
     for i in range(start_index, end_index):
         indices = range(i - history_size, i, 1)
-        features.append(dataset[indices])
-        labels.append(dataset[i:i + target_size])
+        features.append(dataset_f[indices])
+        labels.append(dataset_l[i:i + target_size])
         
     features = np.array(features)
     labels   = np.array(labels)

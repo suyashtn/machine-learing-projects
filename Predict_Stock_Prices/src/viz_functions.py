@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 plt.rcParams['figure.figsize'] = (18, 12)
+plt.rc('xtick', labelsize=12)     
+plt.rc('ytick', labelsize=12)
 
 
 def price(x):
@@ -16,7 +18,7 @@ def price(x):
     return '$%1.2f' % x
 
 
-def plot_basic(stocks, title='Google Trading', y_label='Price USD', x_label='Trading Days'):
+def plot_basic(stocks, title='Google Trading', y_label='Price USD', x_label='Trading Days', **kwargs):
     """
     Plots basic pyplot
     :param stocks: DataFrame having all the necessary data
@@ -25,20 +27,23 @@ def plot_basic(stocks, title='Google Trading', y_label='Price USD', x_label='Tra
     :param x_label: xLabel of the plot
     :return: prints a Pyplot againts items and their closing value
     """
+    filename = kwargs.get('filename', None)
+    
     fig, ax = plt.subplots()
     ax.plot(stocks['Item'], stocks['Close'], '#34495E', linewidth=2.5, linestyle="-")
     #0A7388
     ax.format_ydata = price
-    ax.set_title(title)
+    ax.set_title(title, size = 18)
 
     # Add labels
-    plt.ylabel(y_label)
-    plt.xlabel(x_label)
+    plt.ylabel(y_label, size = 16)
+    plt.xlabel(x_label, size = 16)
 
-    plt.show()
+#     plt.show()
+    fig.savefig(filename, dpi=300, bbox_inches='tight')
 
 
-def plot_prediction(actual, prediction, title='Google Trading vs Prediction', y_label='Price USD', x_label='Trading Days'):
+def plot_prediction(actual, prediction, title='Google Trading vs Prediction', y_label='Price USD', x_label='Trading Days', **kwargs):
     """
     Plots train, test and prediction
     :param actual: DataFrame containing actual data
@@ -48,20 +53,25 @@ def plot_prediction(actual, prediction, title='Google Trading vs Prediction', y_
     :param x_label: xLabel of the plot
     :return: prints a Pyplot againts items and their closing value
     """
-    fig = plt.figure()
-    ax = fig.add_subplot(111)
+    filename = kwargs.get('filename', None)
+#     leg_prop = font_manager.FontProperties(size=14)
+#     title_prop = font_manager.FontProperties(size=18)
+    
+    fig, ax = plt.subplots()
+#     fig = plt.figure()
+#     ax = fig.add_subplot(111)
 
     # Add labels
-    plt.ylabel(y_label)
-    plt.xlabel(x_label)
+    plt.ylabel(y_label, size = 16)
+    plt.xlabel(x_label, size = 16)
 
     # Plot actual and predicted close values
 
-    plt.plot(actual, '#D35400', label='Adjusted Close', linewidth=2.5, linestyle="-")
-    plt.plot(prediction, '#3498DB', label='Predicted Close', linewidth=2.5, linestyle="-")
+    ax.plot(actual, '#D35400', label='Adjusted Close', linewidth=2.5, linestyle="-")
+    ax.plot(prediction, '#3498DB', label='Predicted Close', linewidth=2.5, linestyle="-")
 
     # Set title
-    ax.set_title(title)
+    ax.set_title(title, size = 18)
     ax.legend(loc='upper left')
 
-    plt.show()
+    fig.savefig(filename, dpi=300, bbox_inches='tight')
