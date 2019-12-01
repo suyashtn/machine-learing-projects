@@ -15,3 +15,16 @@ In this project, the aim is to build a stock price predictor that examines the h
  * `src` additional scripts for helper functions are stored in this directory.
  * `lstm` sub directory of `src` where the model definition of LSTM model is encoded.
  * `requirements.txt` External packages/libraries needed for this code are listed here and installed using `pip`
+
+## Dependencies
+The project relies on the following libraries and python packages.
++ numpy
++ pandas
++ math
++ sklearn
++ time
++ requests
++ matplotlib
++ pandas-datareader
++ yfinance
++ sagemaker
