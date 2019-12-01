@@ -16,6 +16,16 @@ In this project, the aim is to build a stock price predictor that examines the h
  * `lstm` sub directory of `src` where the model definition of LSTM model is encoded.
  * `requirements.txt` External packages/libraries needed for this code are listed here and installed using `pip`
 
+
+## Notebook Outline
+1. Download or otherwise retrieve the data.
+2. Process / Prepare the data.
+3. Upload the processed data to S3.
+4. Train a chosen model.
+5. Test the trained model (typically using a batch transform job).
+6. Deploy the trained model.
+7. Use the deployed model.
+
 ## Dependencies
 The project relies on the following libraries and python packages.
 + numpy
@@ -28,3 +38,6 @@ The project relies on the following libraries and python packages.
 + pandas-datareader
 + yfinance
 + sagemaker
+
+---
+Please see the [README](https://github.com/suyashtn/machine-learing-projects/blob/master/README.md) in the root directory for instructions on setting up a SageMaker notebook and downloading the project files (as well as the other notebooks).
