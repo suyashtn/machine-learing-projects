@@ -109,13 +109,11 @@ def train_test_split(stocks, train_frac, *args, **kwargs):
     # Define Test/Train Split 80/20
     train_size = int(stock_matrix.shape[0] * train_frac)
     
-    if not val_frac is None:
-        val_size = int(train_size * val_frac)
-        
     # Set up training, validation and test sets
     selector = [x for x in range(stock_matrix.shape[1]) if x != 2]
     
     if not val_frac is None:
+        val_size = int(train_size * val_frac)
         # train dataset
         X_train = stock_matrix[:(train_size-val_size), selector]
         y_train = stock_matrix[:(train_size-val_size), 2]
