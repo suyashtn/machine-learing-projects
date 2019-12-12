@@ -12,6 +12,9 @@ This repository contains code and associated files for deploying ML models using
 
 [Stock Pirce Predictor](https://github.com/suyashtn/machine-learing-projects/tree/master/Predict_Stock_Prices): Build a stock price prediction model. The share price datasets for publicly listed companies can be obtained from [Yahoo Finance](https://finance.yahoo.com). In this project, the Linear Regression and XGBoost methods are used as benchmark models and the performance of an implementation of the Long Short-Term Memory (LSTM) network model is compared for making future predictions.
 
+
+[Moon Data](https://github.com/suyashtn/machine-learing-projects/tree/master/Moon_Data): In this project, a custom PyTorch neural network is defined and trained to create a binary classifier for data that is separated into two classes; the data looks like two moon shapes when it is displayed, and is often referred to as **moon data**.
+
 ---
 
 ## Setup Instructions
