@@ -15,6 +15,8 @@ This repository contains code and associated files for deploying ML models using
 
 [Moon Data](https://github.com/suyashtn/machine-learing-projects/tree/master/Moon_Data): In this project, a custom PyTorch neural network is defined and trained to create a binary classifier for data that is separated into two classes; the data looks like two moon shapes when it is displayed, and is often referred to as **moon data**.
 
+[Time Series Forecasting](https://github.com/suyashtn/machine-learing-projects/tree/master/Time_Series_Forecasting): Analyze time series data and format it for training a [DeepAR](https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html) algorithm; a forecasting algorithm that utilizes a recurrent neural network. Train a model to predict household energy consumption patterns and evaluate the results.
+
 ---
 
 ## Setup Instructions
